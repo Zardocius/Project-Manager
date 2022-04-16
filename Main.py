@@ -40,18 +40,16 @@ while True:
 
     whom = input()
 
-    whoms = ['me','Me']
-    whomst = ['someone','Someone']
-    whomstdve = ['me','Me','someone','Someone']
+    whom = whom.lower()
 
-    if whom in whoms:
+    if whom == 'me':
         clearConsole()
         print ('What shall be done?: ')
         option1 = input()
         option_1()
         break
 
-    if whom in whomst:
+    elif whom == 'someone':
         clearConsole()
         print ('Who Poor soul has offered their soul for such service?: ')
         option2a = input()
@@ -61,7 +59,7 @@ while True:
         option_2()
         break
 
-    if whom not in whomstdve:
+    else:
         clearConsole()
         print('You mere mortal not understand these simplest rules? Try again!')
         time.sleep(2)
