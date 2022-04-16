@@ -41,8 +41,6 @@ while True:
     whom = input()
 
     whom = whom.lower()
-    whomst = ['me', 'someone']
-
 
     if whom == 'me':
         clearConsole()
